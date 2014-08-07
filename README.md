@@ -82,11 +82,18 @@ find any documentation on adding performance assertions to
 `MiniTest::Spec`, I just raised the scale by an order of magnitude and
 asserted linear 0.999.
 
+`sieve.rb`
+----------
+
+A straightforward sieve for primes up to `n` instead of the first `n`
+primes, for performance testing. Over the same range, it takes 0.41x
+as long.
+
 `isieve.py`
 -----------
 
-A Python implementation of the same algorithm (which I wrote first,
-to compare hash vs. minheap performance). With CPython 3.4 vs. Ruby
+A Python implementation of the same algorithm, for performance testing
+of different data structures. With CPython 3.4 vs. Ruby
 2.0.0, compared to the Ruby version, the Python dict (hash) takes
 0.73x as long, the heap with pushpop 0.66x, and the heap with separate
 push and pop 1.1x.
