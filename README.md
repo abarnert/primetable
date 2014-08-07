@@ -1,0 +1,4 @@
+primetable
+==========
+
+Prime multiplication table
